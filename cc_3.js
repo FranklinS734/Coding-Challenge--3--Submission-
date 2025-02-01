@@ -27,7 +27,7 @@ let totalOrders = orders.reduce((total, qty) => total + qty, 0);
 console.log("Updated Creatine Orders:", orders);
 console.log("Total Creatine Ordered:", totalOrders);
 
-// Task 3 - Tracking Sunny Man's Performance
+// Task 3 -  Employee Performance Tracking Scenario:
 
 // Declaring an object "employee" with performance details, listed is the profile
 let employee = {
@@ -45,3 +45,18 @@ employee.promotionEligible = employee.performanceScore >= 3;
 
 // Log the updated employee object
 console.log("Updated Employee Performance:", employee);
+
+// Task 4 -Customer Feedback Records Scenario
+
+// Declaring an array "feedback" with three customer feedback objects
+let feedback = [
+    { customerName: "Dia Son", feedbackText: "Great product!", rating: 5 },
+    { customerName: "Neil Jia", feedbackText: "Quality is okay and a bit pricey.", rating: 2 },
+    { customerName: "Adam Fessler", feedbackText: "Fast shipping and great product.", rating: 5 }
+];
+
+// Add a new feedback object
+feedback.push({ customerName: "Raymond Keen", feedbackText: "Well designed product", rating: 5 });
+
+// Log the entire feedback list
+console.log("Customer Feedback:", feedback);
