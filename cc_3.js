@@ -46,7 +46,7 @@ employee.promotionEligible = employee.performanceScore >= 3;
 // Log the updated employee object
 console.log("Updated Employee Performance:", employee);
 
-// Task 4 -Customer Feedback Records Scenario
+// Task 4 -Customer Feedback Records 
 
 // Declaring an array "feedback" with three customer feedback objects
 let feedback = [
@@ -60,3 +60,21 @@ feedback.push({ customerName: "Raymond Keen", feedbackText: "Well designed produ
 
 // Log the entire feedback list
 console.log("Customer Feedback:", feedback);
+
+// Task 5 - Inventory Management System Scenario (supplements)
+
+// Declare an object "inventory" with product details
+let inventory = {
+    itemName: "Godzilla Pre-Workout",
+    stockCount: 500,
+    price: 55.99,
+    
+    // Calculate total value of stock on hand
+    calculateTotalValue: function() {
+        return this.stockCount * this.price;
+    }
+};
+
+// Log inventory details and total stock value
+console.log("Inventory Details:", inventory);
+console.log("Total Inventory Value:", inventory.calculateTotalValue());
