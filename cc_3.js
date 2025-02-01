@@ -26,3 +26,22 @@ let totalOrders = orders.reduce((total, qty) => total + qty, 0);
 // Step 4: Log the updated order quantities and total order count
 console.log("Updated Creatine Orders:", orders);
 console.log("Total Creatine Ordered:", totalOrders);
+
+// Task 3 - Tracking Sunny Man's Performance
+
+// Declaring an object "employee" with performance details, listed is the profile
+let employee = {
+    name: "Sunny Man",
+    role: "Data Analyst",
+    performanceScore: 2,
+    isActive: true
+};
+
+// Update the performanceScore
+employee.performanceScore = 3;
+
+// Adding a new property "promotionEligible"
+employee.promotionEligible = employee.performanceScore >= 3;
+
+// Log the updated employee object
+console.log("Updated Employee Performance:", employee);
